@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body class="bg">
-  <div class="jumbotron">
+
   <div class="container">
+    <div class="jumbotron">
     <nav class = 'navbar navbar-inverse'>
       <ul class="nav navbar-nav">
         <li><a class="navbar-brand" href="{% url 'index' %}"></a></li>
@@ -23,7 +24,7 @@
         {% endif %}
       </ul>
     </nav>
-  </div>
+    </div>
   </div>
 
   {% block body_block %}
