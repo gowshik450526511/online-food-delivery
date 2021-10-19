@@ -1,0 +1,21 @@
+.mrg{
+ background:url(mrg_background.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
+}
+#itemname{
+  font-style:italic;
+  font-size:30px;
+  background-color:yellow;
+}
+#itemrupees{
+  font-family:cursive;
+  font-size:20px;
+}
+#cart1{
+  font-size:20px;
+  color:yellow;
+}

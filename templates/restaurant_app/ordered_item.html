@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>South Foods</title>
+  <link rel="stylesheet" href="{% static 'css/order.css' %}">
+</head>
+<body class="bg">
+  <div class="container">
+      <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+          <li><a class="navbar-brand" href="#"><p id="id1">Home</p></a></li>
+          <li><a class="navbar-link" href="#">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="nav-link" onclick="https://img.icons8.com/office/2x/add-shopping-cart.png" href="{% url 'restaurant_app:ordered_item' %}"><img src="https://img.icons8.com/office/2x/add-shopping-cart.png" height="30px"><span id="cart1"></span></a></li>
+        </ul>
+      </nav>
+  </div>
+  <div class="container">
+    <h1 class="text-center">BILL</h1>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-3" id="name">
+          <h3 class="text-center" id="name1">Name</h3>
+        </div>
+        <div class="col-md-3" id="price">
+          <h3 class="text-center">Price</h3>
+        </div>
+        <div class="col-md-3" id="remove">
+          <h3 class="text-center">Remove</h3>
+        </div>
+      </div>
+      <div class="row" id="total">
+        <h1 class="text-center">Total:</h2>
+      </div>
+      <div class="row" id="ordernow">
+        <a href="{% url 'restaurant_app:order' %}" class="btn btn-success float-right" type="submit">Order Now</a>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

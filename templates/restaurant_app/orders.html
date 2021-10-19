@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Orders</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/orders.css' %}">
+</head>
+<body>
+  <h1>hello world</h1>
+  <div class="container">
+      <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+          <li><a class="navbar-brand" href="#"><p id="id1">Home</p></a></li>
+          <li><a class="navbar-link" href="#">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="nav-link"  onclick="https://img.icons8.com/office/2x/add-shopping-cart.png" href="{% url 'restaurant_app:ordered_item' %}"><img src="https://img.icons8.com/office/2x/add-shopping-cart.png" height="30px"><span id="cart1"></span></a></li>
+        </ul>
+      </nav>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <form method="POST">
+        {% csrf_token %}
+        <label for="Address">Address</label>
+        <input type="text" class="gap" name="address" placeholder="Enter Your Address"><br><br>
+
+        <label for="street_name">Street Name</label>
+        <input type="text" class="gap1" name="street_name" placeholder="Enter Your Streetname"><br><br>
+
+        <label for="phone_no">Phone No</label>
+        <input type="text" class="gap2" name="phone_no" placeholder="Enter Your Phoneno"><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.bg {
+  background:url(restaurant.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.caption{
+  text-align:center;
+}
+#id3{
+  color:yellow;
+}
+#con{
+  text-align:center;
+  color:lightblue;
+  font-family:cursive;
+}
+#home{
+  color:white;
+}
+#login{
+  color:white;
+}
+#signup{
+  color:white;
+}
+.title1{
+   font-family:'CursiveSerifBook';
+   font-weight: normal;
+   font-style: italic;
+   font-size:50px;
+}
+footer{
+  font-size:30px;
+  text-align:center;
+  padding-top:100px;
+  color: white;
+}
