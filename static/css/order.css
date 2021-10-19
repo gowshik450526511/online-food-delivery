@@ -1,0 +1,20 @@
+.bg{
+  background:url(bill.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.text-center{
+  font-size:70px;
+  color:yellow;
+}
+
+#cart1{
+  font-size:20px;
+  color:yellow;
+}
+
+.container{
+  background-color:#6C0E23;
+}

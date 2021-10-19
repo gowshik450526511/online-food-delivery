@@ -1,0 +1,29 @@
+{% extends 'restaurant_app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+  <div class="container">
+    <div class="jumbotron">
+      {% if registered %}
+        <!-- <a class="btn-btn-success" href="{% url 'restaurant_app:home' %}">U Can Order Now</a> -->
+        <p><a href="{% url 'restaurant_app:home' %}" class="btn btn-success"role="button">Order Now</a></p>
+        <h1>Thank you for registering!</h1>
+
+      {% else %}
+        <h1>Register Here</h1>
+        <h3>Just fill out the form.</h3>
+
+        <form enctype="multipart/form-data" method="POST">
+          {% csrf_token %}
+          {{ user_form.as_p }}
+          {{ profile_form.as_p }}
+          <input type="submit" name="" value="Register">
+        </form>
+
+      {% endif %}
+
+    </div>
+
+  </div>
+
+{% endblock %}

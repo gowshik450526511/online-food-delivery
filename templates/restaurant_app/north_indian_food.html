@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>north indian food</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/north_indian_food.css' %}">
+</head>
+<body class="bg">
+  <div class="container">
+    <nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav">
+        <li><a class="navbar-brand" href="#"><p id="id1">Home</p></a></li>
+        <li><a class="navbar-link" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="title2">NORTH INDIAN FOODS</h1><br>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4"> <!-- column 1 -->
+       <div class="thumbnail"> <!--  thumbnail 1  -->
+         <img src="{% static 'css/north_breakfast.jpg' %}" alt=""> <!-- image 1 -->
+         <div class="caption"> <!-- caption -->
+           <h3>BreakFast</h3>
+           <p><a href="{% url 'restaurant_app:north_indian_breakfast' %}" class="btn btn-success"role="button">Order Now</a></p>
+         </div>
+       </div>
+     </div>
+     <div class="col-sm-6 col-md-4"> <!-- column 1 -->
+        <div class="thumbnail"> <!--  thumbnail 1  -->
+          <img src="{% static 'css/north_lunch.jpg' %}" alt=""> <!-- image 1 -->
+          <div class="caption">
+            <h3>Lunch</h3>
+            <p><a href="{% url 'restaurant_app:north_indian_lunch' %}" class="btn btn-success" role="button">Order Now</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4"> <!-- column 1 -->
+         <div class="thumbnail"> <!--  thumbnail 1  -->
+           <img src="{% static 'css/north_dinner.jpg' %}" alt=""> <!-- image 1 -->
+           <div class="caption"> <!-- caption -->
+             <h3 id="id3">Dinner</h3>
+             <p><a href="{% url 'restaurant_app:north_indian_dinner' %}" class="btn btn-success" role="button">Order Now</a></p>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

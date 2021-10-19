@@ -1,0 +1,16 @@
+.bg{
+  background-image: url(north_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1550px 900px;
+}
+
+.jumbotron{
+  background-color:white;
+  text-align:center;
+  font-family:cursive;
+  color:lightblue;
+}
+
+.caption{
+  text-align:center;
+}
